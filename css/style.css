@@ -12,7 +12,51 @@
 /* ==========================================================         1.- Configuracion Global          ===================================================================== */
 
 
-h1 { font-family: "Arial Narrow", Arial, sans-serif; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; } h3 { font-family: "Arial Narrow", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } p { font-family: "Arial Narrow", Arial, sans-serif; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } blockquote { font-family: "Arial Narrow", Arial, sans-serif; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } pre { font-family: "Arial Narrow", Arial, sans-serif; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5714px; }
+h1 { 
+    font-family: "Arial Narrow", Arial, sans-serif; 
+    font-size: 24px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 26.4px; 
+} 
+    
+h3 { 
+    font-family: "Arial Narrow", Arial, sans-serif; 
+    font-size: 20px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 700; 
+    line-height: 15.4px; 
+    color: #0b6b02;
+} 
+
+p { 
+    font-family: "Arial Narrow", Arial, sans-serif; 
+    font-size: 14px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 20px; 
+} 
+
+blockquote { 
+    font-family: "Arial Narrow", Arial, sans-serif; 
+    font-size: 21px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 30px; 
+} 
+
+pre { 
+    font-family: "Arial Narrow", Arial, sans-serif; 
+    font-size: 13px; 
+    font-style: normal; 
+    font-variant: normal; 
+    font-weight: 400; 
+    line-height: 18.5714px; 
+}
 
 body{
     width: 100%;
@@ -59,7 +103,7 @@ ul{
     transition: .8s;
 }
 p{
-	font-size: 16px;
+	font-size: 20px;
 }
 .wrapper{
 	padding: 75px 0px;
@@ -190,13 +234,13 @@ p{
 /*  ================================================ 3.- Header ================================================================= */
 .header{
 	height: 100vh;
-	background: linear-gradient(45deg, #CDDC39 1%, #727511);
+	background: linear-gradient(45deg, rgb(57, 172, 4) 1%, #0b6b02);
     padding: 45px 0px;
 }
 #logo {
 	font-size: 80px;
-	letter-spacing: 10px;
-	font-weight: 100;
+	letter-spacing: 10px; 
+	font-weight: bold;
 	color: white;
 	display: inline-block;
 	padding: 0px;
@@ -402,7 +446,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 }
 @media (max-width:992px) and (min-width:767px) {
     .item-list-right.item-list-big li,.item-list-left.item-list-big li {
-        font-size:14px;
+        font-size:20px;
     }
     .item-list-right h3,.item-list-left h3 {
         font-size:22px;
@@ -507,7 +551,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 HH              Speciality
 HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 #speciality{
-    background: #eee;
+    background: #eeeeee;
     text-align: center;
     color: #333;
 }
@@ -634,7 +678,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 #features .skill .skill-fill{
     width: 0%;
     height: 15px;
-    background-color: rgb(32, 32, 32);
+    background-color: rgb(56, 146, 14);
     border-radius: 20px;
 }
 #features .skill .fill_90{ 
@@ -700,7 +744,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
 
 }
 #gallery h1 span{
-    color: coral;
+    color: rgb(91, 51, 165);
 }
 
 
@@ -1012,13 +1056,11 @@ ul.pricing-table a.buy:hover .ion-ios-cart-outline:before {
 
 /* ===================================    15. Contact Section CSS   ====================================== */
 
-#contact{
-    border-top: 80px solid #323232;
-}
+
 #contact h3.entry-title {
-    font-size: 50px;
+    font-size: 20px;
     line-height: 149%;
-    font-weight: 400;
+    font-weight: 200;
     word-break: break-word;
     text-align: center;
     color: #fff;
