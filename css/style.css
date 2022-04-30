@@ -312,7 +312,7 @@ a#logo:hover{
     padding: 10px;
     background: white;
     border-radius: 50px;
-    width: 200px;
+    width: 250px;
     text-align: left;
     color: #333333;
     border: 1px solid white;
@@ -328,6 +328,11 @@ a#logo:hover{
     font-size: 36px;
     margin-left: 10px;
     margin-right: 25px;
+}
+
+.btn.btn-download strong{
+    display: block;
+    transform: translateY(0px);
 }
 
 /*HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH
@@ -579,6 +584,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     color: rgb(255, 92, 124);
 }
 #speciality a:hover{
+    cursor: pointer;
     color: crimson;
 }
 
@@ -618,6 +624,7 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     font-size: 20px;
 }
 .textos{
+    color: #fff;
     font-size: 20px;
 }
 .features-list{
@@ -650,18 +657,79 @@ HHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHHH*/
     margin-left: -15px;
 }
 
+/* Codigo css para mostrar los css */
+.pdf-container{
+    display: none;
+    position: fixed;
+	width: 100%;
+	height: 100%;
+
+    top: 80px;
+    
+    z-index: 50;
+    background-color: rgba(0, 0, 0, 0.562);
+    transition: all 3s ease-in-out;
+}
+.none{
+    display: none;
+    transition: all 3s ease-in-out;
+}
+.block{
+    display: block;
+    transition: all 3s ease-in-out;
+}
+
+
+.pdf-container > button{
+    position: fixed;
+    display: block;
+    background: none;
+    border: none;
+
+    z-index: 51;
+    top: 100px;
+    right: 100px;
+    transition: all 3s ease-in-out;
+}
+.pdf-container > button > i{
+    color: #fff;
+    font-size: 5rem;
+}
+.pdf-container > button > i:hover{
+    color: rgb(124, 124, 124);
+    font-size: 5rem;
+    transition: all 500ms ease;
+}
+
+.pdf-container > iframe{
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    
+    
+    width: 800px;
+    min-height: 90%;
+}
+
+
+
+
+
+
+
+
 /*  Barra para los porcentajes */
 
 #features .skill{
     width: 100%;
     height: 15px;
-    background-color: #b8cf81;
+    background-color:rgb(66, 66, 66);
     border-radius: 20px;
 }
 #features .skill .skill-fill{
     width: 0%;
     height: 15px;
-    background-color: rgb(56, 146, 14);
+    background-color: rgb(255, 255, 255);
     border-radius: 20px;
 }
 #features .skill .fill_90{ 

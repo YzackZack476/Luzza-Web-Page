@@ -81,3 +81,45 @@ $(document).ready(function() {
   $(".prev").click(function(){
     owl.trigger('owl.prev');
   })
+
+
+//   ================= [Show PDF] =======================
+
+function show_Viewer(cartificacion){
+	// Obtener el objeto pdf_viewer
+	let pdf_viewer = document.getElementById("pdf_viewer");
+	
+	// Mostrar u Ocultar diferentes iframe
+	if (cartificacion === undefined){
+		let frames = document.querySelectorAll(".pdf_to_show");
+		frames.forEach(function(item){
+			item.style.display = "none";
+		});	
+	
+	}else{
+		let frame = document.getElementById("pdf_to_show_"+String(cartificacion));
+		frame.style.display = "block";
+	}
+	
+
+	// Crear un objeto llamado obj 
+	obj = pdf_viewer.classList;
+
+	// Obtener la lista dentro del objeto
+	let myArray = Object.keys(obj).map(function(key){
+		return obj[key];
+	});
+
+
+
+
+	// Verificar si tiene clase none
+	if (myArray.includes("none")){	
+		pdf_viewer.classList.remove("none");
+		pdf_viewer.classList.add("block");
+	}else{
+		pdf_viewer.classList.remove("block");
+		pdf_viewer.classList.add("none");
+	}
+
+}
