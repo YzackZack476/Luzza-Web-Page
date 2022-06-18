@@ -555,6 +555,25 @@
             }
           });
         });
+
+
+
+        function redireccionar() {
+
+            var url = window.location.href.replace("index.html","");
+            var normal = "index.html";
+            var moviles = "index-mobile.html";
+            
+            // Aquí redireccionamos a web para dispositivos móviles
+            // o a web normal dependiendo de la resolución 
+         if (screen.width < 800) {
+                window.location.href= url+moviles;
+            }
+        
+        }
+
+        redireccionar();
+
     </script>
 
     <!--  Instagram Carrusel -->
@@ -562,6 +581,9 @@
     src="https://cdn2.woxo.tech/a.js#62576312c06d25002193e421" 
     async data-usrc>
     </script>
+
+
+
 
 </body>
 </html>
