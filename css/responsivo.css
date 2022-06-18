@@ -1,0 +1,352 @@
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,100,300,500,700);
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
+
+
+*{
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+    font-size: 10px;
+    background-color: inherit;
+    font-family: "Arial Narrow", Arial, sans-serif; 
+}
+
+body{
+    width: 100%;
+    height: auto;
+    background-color: white;
+}
+
+header{
+    position: fixed;
+    z-index: 20;
+
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin-top: 0;
+    margin-left: 0;
+
+    width: 100%;
+    height: 5rem;
+    padding: 1rem;
+
+    display: inline-flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    background-color:#0b6b02;
+
+}
+
+header > *{
+    top: 0;
+    padding: 0;
+    margin-top: 0;
+    color: white;
+    /* border: 5px solid red; */
+}
+
+header > span{
+    color: white;
+    font-size: 3rem;
+    text-transform: uppercase;
+    letter-spacing: 1.2rem;
+}
+header label{
+    width: auto;
+    height: auto;
+    padding: 0.3rem;
+}
+header label i{
+    font-size: 4rem;
+}
+header input{
+    display: none;
+}
+
+header input:checked ~ .float{
+    display: inline-flex;
+    transition: all 500ms ease;
+}
+header input:not(:checked) ~ .float{ 
+    margin-top: 200rem;
+    transition: all 500ms ease;
+}
+
+
+/* Para el menu flotante */
+.float > *{
+    background-color: transparent;
+}
+
+.float{
+    position: fixed;
+
+    width: 100%;
+    height: 100%;
+    
+    margin-top: 7rem;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(50deg, rgba(114, 161, 59, 0.9), rgba(136, 139, 25, 0.8));
+
+    transition: all 500ms ease;
+    z-index: 0;
+    
+}
+.float ul{
+    margin-top: 1rem;
+    list-style: none;
+}
+.float ul li{
+    margin-bottom: 4rem;
+
+    padding: 1rem;
+    color: white;
+    text-align: center;
+}
+.float ul li a{
+    color: wheat;
+    text-decoration: none;
+    font-size: 4rem;
+}
+
+/* Para la descripcion */
+
+#cabecera{
+    margin-top: 7rem;
+}
+
+.top{
+    width: 100%;
+    height: auto;
+    color: white;
+    background: linear-gradient(-45deg, rgb(57, 172, 4) 1%, #0b6b02);
+    padding-bottom: 2rem;
+}
+
+.top h1, h1 > *{
+    font-weight: lighter;
+    color: rgba(255, 255, 255, 0.466);
+    font-size: 3rem;
+    padding: 1rem;
+}
+.top h1 span{
+    color: white;
+    font-weight: bold;
+}
+.top p{
+    padding: 1rem;
+    font-size: 2rem;
+    line-height: 2.5rem;
+    
+}
+
+.apartado-compra{
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.apartado-compra .boton{
+    min-width: 170px;
+    width: auto;
+    height: auto;
+    padding: 2rem;
+    border-radius:505px;
+    background-color: #181818;
+    text-align: center;
+}
+
+.apartado-compra .boton:active{
+    background-color: #222222;
+}
+
+.apartado-compra .boton a{
+    color: white;
+    font-size: 2.5rem;
+    text-decoration: none;
+    margin-right: 1rem;
+}
+
+.apartado-compra .boton i{
+    font-size: 2.5rem;
+}
+
+
+.properties{
+    padding: 1.5rem;
+    margin-top: 4rem;
+}
+
+.properties > h2{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+.properties > h2 >span{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(0, 156, 13);
+    letter-spacing: 0.5rem;
+}
+
+.properties .elemento-lista{
+    color: black;
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.elemento-lista i{
+    padding: 1rem;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+    border-radius: 25%;
+    margin-right: 20px;
+    background-color: rgb(41, 41, 41);
+}
+
+.elemento-lista h3{
+    width: auto;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+.elemento-lista i, h3, p{
+    font-size: 2rem;
+    line-height: 2rem;
+}
+
+.properties img{
+    width: 100%;
+}
+
+/* features */
+
+.features{
+    padding-top: 3rem;
+    padding-bottom: 10rem;
+}
+.features{
+    width: 100%;
+    height: auto;
+    background-color: #323232;
+}
+
+.features img{
+    width: 50%;
+}
+
+.features > h2{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+.features > h2 >span{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(0, 183, 207);
+    letter-spacing: 0.5rem;
+}
+
+.features p,
+.features > ul > li{
+    font-size: 2rem;
+    line-height: 2rem;
+    color: #fff;
+    padding: 2rem;
+    line-height: 2.7rem;
+}
+
+.porcent-bar{
+    width: 0%;
+    height:10px;
+    background-color: rgb(228, 228, 228);
+    border-radius: 20px;
+}
+
+.contenido-features{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;   
+}
+
+.contenido-features > span{
+    font-size: 2rem;
+    margin-left: 1.5rem;
+}
+
+
+
+@keyframes subir_nivel {
+    0%{
+        width: 0%;
+        background-color: #fff;
+    }
+    100%{
+        width: 90%;
+        background-color: #fff;
+    }
+}
+
+
+
+
+.see-more h1{
+    width: auto;
+    background-color: #131313;
+    color: #fff;
+    font-size: 2.5rem;
+    text-align: center;
+    padding: 1rem;
+}
+
+.crimson{
+    width: auto;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    background-color: inherit;
+    color: red;
+    font-size: 2.5rem;
+}
+
+.certifications{
+    width: 100%;
+    height: 300px;
+    background-color:#323232;
+}
+
+.certifications > h2{
+    width: 100%;
+    color: #fff;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    text-decoration: overline;
+}
+.certifications > h2 >span{
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: rgb(0, 207, 197);
+    letter-spacing: 0.5rem;
+}
